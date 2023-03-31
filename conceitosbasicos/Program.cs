@@ -2,17 +2,28 @@
 using System.Runtime.InteropServices;
 
 
-Console.WriteLine("Minha altura em nano é " +altura+ " e meu peso é "+ peso +" e em nano é "+ nanoAltura + "nm");
 
-int idad = 30;
+//EXERCICIOS COM VETORES
+/*
+ CRIE UM VETOR PARA ARMAZENAR AS IDADES DE CINCO PESSOAS E AO FINAL IMPRIMA:
 
-Console.WriteLine("A idade de Marcos é "+ idad +"!");
+1)a passoa mais nova
+2)a pessoa mais velha
+3)a média das idades
+4)todas as idades ímpares
+5)todas as idades pares
+ 
+ 
+ */
 
-double ida = 30.0;
+byte[] idades = new byte[5];
+for (int i = 0; i < 5;i++)
+{
+    Console.WriteLine($"Informe a {i+1}ª idade");
+    idades[i] = byte.Parse(Console.ReadLine());
+}
 
-Console.WriteLine("A idade de Marcos é "+ (int)ida +"!");
-
-string parcela1 = "10";
-string parcela2 = "20";
-
-Console.WriteLine(parcela1+parcela2);
+foreach (byte idade in idades);
+{
+    Console.WriteLine(idade);
+}
